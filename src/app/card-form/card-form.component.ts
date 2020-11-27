@@ -38,8 +38,14 @@ export class CardFormComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  // tslint:disable-next-line:typedef
   onSubmit(){
     console.log('Form was submitted');
+  }
+
+  // tslint:disable-next-line:typedef
+  onReset(){
+    this.cardForm.reset();
   }
 
 }
